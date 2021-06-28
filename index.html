@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link id="mode" rel="stylesheet" href="dark.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+</head>
+<body>
+<div class="calculator">
+    <h1>Simple Calculator</h1>
+    <div class="firstLine">
+        <input type="text" class="result" id="result" placeholder="0" required readonly>
+        <input type="button" value="C" class="clear" id="clear" onclick="clr()">
+    </div>
+    <div>
+        <input type="button" value="7" onclick="setValue('7')">
+        <input type="button" value="8" onclick="setValue('8')">
+        <input type="button" value="9" onclick="setValue('9')">
+        <input type="button" value="+" onclick="setValue('+')">
+
+    </div>
+    <div>
+        <input type="button" value="4" onclick="setValue('4')">
+        <input type="button" value="5" onclick="setValue('5')">
+        <input type="button" value="6" onclick="setValue('6')">
+        <input type="button" value="-" onclick="setValue('-')">
+
+    </div>
+    <div>
+        <input type="button" value="1" onclick="setValue('1')">
+        <input type="button" value="2" onclick="setValue('2')">
+        <input type="button" value="3" onclick="setValue('3')">
+        <input type="button" value="*" onclick="setValue('*')">
+
+    </div>
+    <div>
+        <input type="button" value="0" onclick="setValue('0')">
+        <input type="button" value="." onclick="setValue('.')">
+        <input type="button" value="/" onclick="setValue('/')">
+        <input type="button" value="=" onclick="calculate()">
+
+    </div>
+    <div>
+        <button type="button" id="dark-mode">Dark Mode
+        <button  type="button">AzCodeStudio
+        <button type="button">Coder
+
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
